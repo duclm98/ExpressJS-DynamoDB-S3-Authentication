@@ -1,0 +1,26 @@
+# ExpressJS - DynamoDB - Authentication
+
+### Script
+1. npm start => Development environment, PORT: 4001
+2. npm run staging => Staging environment, PORT: 4002
+3. npm run production => Production environment, PORT: 4003
+
+### Authentication
+1. POST: /auth/register (Register)
+* Body
+ * username: ...
+ * password: ...
+2. POST: /auth/login (Login)
+* Body
+ * username: ...
+ * password: ...
+3. POST: /auth/refresh (Refresh token retrieval)
+* Headers
+ * x_authorization: ...
+* Body
+ * refreshToken: ...
+4. Others API
+* Headers
+ * x_authorization: ...
+* Body
+ *...
